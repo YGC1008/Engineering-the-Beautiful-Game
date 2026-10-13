@@ -1,0 +1,32 @@
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.venv*/
+venv/
+.env
+.env.*
+.pytest_cache/
+
+# Airflow and local secrets
+airflow-home/
+secrets/
+*.db
+*.sqlite
+*.dump
+*.backup
+
+# Data files
+data/raw/
+data/processed/
+*.csv
+
+# Editor and operating system
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
