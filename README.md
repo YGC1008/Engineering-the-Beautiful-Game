@@ -158,6 +158,20 @@ python -m streamlit run dashboard/app.py
 
 The dashboard requires access to the populated PostgreSQL database.
 
+## Project Screenshots
+
+### Apache Airflow Pipeline
+
+![Successful Airflow DAG](screenshots/airflow_pipeline.png)
+
+### Streamlit Analytics Dashboard
+
+![Streamlit Dashboard](screenshots/Dashboard.png)
+
+### PostgreSQL Data Validation
+
+![PostgreSQL Validation](screenshots/postgresql_results.png)
+
 ## Reproducibility
 
 Install the Python dependencies:

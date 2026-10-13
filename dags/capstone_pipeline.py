@@ -8,6 +8,9 @@ PROJECT_DIR = Path(
     "/mnt/c/Users/yared/Documents/Engineering the Beautiful Game"
 )
 
+PYTHON_EXECUTABLE = (
+    "/home/yared/airflow-capstone/.venv312/bin/python"
+)
 
 @dag(
     dag_id="engineering_the_beautiful_game",
@@ -24,7 +27,7 @@ def capstone_pipeline():
     def extract():
         import subprocess
         subprocess.run(
-            ["python", "src/extract.py"],
+            [PYTHON_EXECUTABLE, "src/extract.py"],
             cwd=PROJECT_DIR,
             check=True,
         )
@@ -33,7 +36,7 @@ def capstone_pipeline():
     def validate():
         import subprocess
         subprocess.run(
-            ["python", "src/validate.py"],
+            [PYTHON_EXECUTABLE, "src/validate.py"],
             cwd=PROJECT_DIR,
             check=True,
         )
@@ -42,7 +45,7 @@ def capstone_pipeline():
     def transform():
         import subprocess
         subprocess.run(
-            ["python", "src/transform.py"],
+            [PYTHON_EXECUTABLE, "src/transform.py"],
             cwd=PROJECT_DIR,
             check=True,
         )
@@ -51,7 +54,7 @@ def capstone_pipeline():
     def load():
         import subprocess
         subprocess.run(
-            ["python", "src/load.py"],
+            [PYTHON_EXECUTABLE, "src/load.py"],
             cwd=PROJECT_DIR,
             check=True,
         )
