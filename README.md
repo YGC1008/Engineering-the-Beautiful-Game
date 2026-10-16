@@ -4,15 +4,15 @@
 
 ## Project Overview
 
-This project develops an end-to-end data engineering pipeline to analyze how passing patterns, progressive ball movement, and attacking sequences differ between winning, drawing, and losing teams in professional soccer matches.
+This project develops an end-to-end data engineering pipeline to analyze how passing patterns, progressive ball movement, and attacking sequences differ between winning, drawing, and losing teams in professional football matches.
 
-Using StatsBomb Open Data from the 2015–2016 English Premier League, the project integrates Python, PostgreSQL, Apache Airflow, and Streamlit to transform raw event-level soccer data into structured analytical insights.
+Using StatsBomb Open Data from the 2015–2016 English Premier League, the project integrates Python, PostgreSQL, Apache Airflow, and Streamlit to transform raw event-level football data into structured analytical insights.
 
 The project was developed as part of the WGU D610 Data Engineering Capstone.
 
 ## Research Question
 
-**How do passing patterns, progressive ball movement, and attacking sequences differ between winning and losing teams in professional soccer matches?**
+**How do passing patterns, progressive ball movement, and attacking sequences differ between winning and losing teams in professional football matches?**
 
 Drawn matches are included as an additional comparison group.
 
