@@ -23,7 +23,7 @@ def load_data():
         dbname="engineering_the_beautiful_game",
         user="postgres",
         password=os.environ["PGPASSWORD"],
-        host="127.0.0.1",
+        host="localhost",
         port=5432
     ) as conn:
         with conn.cursor() as cursor:
